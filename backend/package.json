@@ -1,0 +1,23 @@
+{
+  "name": "libretodo-backend",
+  "version": "0.1",
+  "main": "index.js",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-static": "^1.2.6",
+    "pg": "^8.9.0",
+    "pm2": "^5.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "dbsetup": "cd scripts && node setupDatabase.js",
+    "dev": "npx nodemon index.js",
+    "prod": "sudo npx pm2 start pm2.config.js",
+    "stop-prod": "sudo npx pm2 stop pm2.config.js"
+  }
+}

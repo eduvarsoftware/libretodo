@@ -1,0 +1,11 @@
+.BoardArea {
+  min-height: 400px;
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

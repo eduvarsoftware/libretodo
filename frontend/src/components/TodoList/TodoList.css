@@ -1,0 +1,100 @@
+.TodoList {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.TodoListHeader {
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+
+.TodoListHeaderText {
+  width: 80%;
+  padding-left: 10px;
+  height: 100%;
+  vertical-align: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  /* border: 1px solid red; */
+}
+
+.TodoListHeaderEditButton {
+  margin-left: 5px;
+  font-size: xx-small;
+  color: palegoldenrod;
+}
+
+.TodoListAddItemButton,
+.TodoListDeleteButton {
+  height: 100%;
+  width: 10%;
+  /* border: 1px solid red;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TodoListAddItemButton {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(245, 249, 169);
+  color: black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TodoListItem {
+  width: 100%;
+  min-height: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TodoListItemText {
+  width: 80%;
+}
+
+.TodoListItemDelete {
+  width: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .TodoList {
+    width: 100%;
+  }
+  .TodoListItemText {
+    width: 90%;
+  }
+  .TodoListHeaderInput {
+    width: 90%;
+  }
+}

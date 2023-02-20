@@ -1,0 +1,81 @@
+.ModalRoot {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ModalBox {
+  width: 30%;
+  height: 40%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+.ModalFormContainer {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalInput {
+  border-radius: 5px;
+  height: 30px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.ModalButtonGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalButton {
+  width: 30%;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  min-height: 30px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .ModalBox {
+    width: 80%;
+    height: 300px;
+    /* height: 30%; */
+  }
+  .ModalInput {
+    width: 90%;
+  }
+}

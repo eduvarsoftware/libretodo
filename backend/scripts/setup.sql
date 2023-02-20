@@ -1,0 +1,10 @@
+create database mydb;
+\c mydb;
+create user myusername with password 'mypassword';
+create table libretodo_users(username varchar(255) unique, hashed_pw varchar(255), salt varchar(255), token varchar(255), token_expires_at varchar(255));
+create table libretodo_listdata(username varchar(255), list_id varchar(255) unique, list_name varchar(255));
+create table libretodo_listcontent(list_id varchar(255), list_item varchar(255));
+grant all privileges on database mydb to myusername;
+grant all privileges on table libretodo_listcontent to myusername;
+grant all privileges on table libretodo_listdata to myusername;
+grant all privileges on table libretodo_users to myusername;

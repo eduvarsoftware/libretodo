@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(245, 249, 169);
+  padding-top: 20px;
+}
+
+@import url("./components/Topbar/Topbar.css");
+@import url("./components/Board/BoardArea.css");
+@import url("./components/Board/AddTodoListButton.css");
+@import url("./components/Footer/Footer.css");
+@import url("./components/TodoList/TodoList.css");
+@import url("./components/SignUpModal/SignUpModal.css");

@@ -1,0 +1,23 @@
+.Topbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .TopbarTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .TopbarTitle > * {
+    margin: 0;
+  }
+  
+  .TopbarUserInfo span {
+    color: blue;
+  }
