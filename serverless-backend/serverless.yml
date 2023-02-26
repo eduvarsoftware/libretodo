@@ -1,0 +1,13 @@
+service: libretodo-backend-2
+frameworkVersion: '2 || 3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  lambdaHashingVersion: '20201221'
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi: '*'
